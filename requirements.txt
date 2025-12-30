@@ -3,7 +3,7 @@ ultralytics==8.0.134
 easyocr==1.6.2
 deepface==0.0.87
 tensorflow==2.14.0
-opencv-python-headless==4.8.1.78
+opencv-python-headless<=4.5.4.60
 numpy==1.26.0
 pillow==10.1.0
 gunicorn==21.2.0
