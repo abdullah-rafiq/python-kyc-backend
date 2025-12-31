@@ -3,7 +3,7 @@ services:
     name: kyc-backend
     env: docker
     plan: free
-    repo: https://github.com/yourusername/kyc-backend
+    repo: https://github.com/abdullah-rafiq/kyc-backend
     branch: main
     buildCommand: docker build -t kyc-backend .
     startCommand: docker run -p $PORT:7860 kyc-backend
