@@ -1,4 +1,6 @@
 import os
+os.environ["OPENCV_DISABLE_DNN_TYPING"] = "1"
+os.environ["OPENCV_LOG_LEVEL"] = "ERROR"
 import io
 import json
 import base64
@@ -21,7 +23,8 @@ print("Loading KYC Models...", file=sys.stderr)
 reader = easyocr.Reader(['en', 'ur'], gpu=False)
 
 # YOLO
-yolo_model = YOLO('yolov8n.pt')
+yolo_model = YOLO(os.getenv("YOLO_MODEL", "yolov8n.pt"))
+
 
 print("Models loaded!", file=sys.stderr)
 
