@@ -4,7 +4,7 @@ python-multipart==0.0.6
 
 numpy==1.23.5
 pillow==10.1.0
-opencv-python-headless==4.8.1.78
+opencv-python-headless==4.5.4.60
 easyocr==1.6.2
 
 deepface==0.0.87
