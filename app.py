@@ -1,5 +1,4 @@
 import os
-os.environ["OPENCV_DISABLE_DNN_TYPING"] = "1"
 os.environ["OPENCV_LOG_LEVEL"] = "ERROR"
 import io
 import json
