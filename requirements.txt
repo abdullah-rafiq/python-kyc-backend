@@ -1,10 +1,23 @@
 flask==2.3.3
-ultralytics==8.0.134
-easyocr==1.6.2
-deepface==0.0.87
-tensorflow==2.14.0
-opencv-python-headless<=4.5.4.60
-numpy==1.26.0
-pillow==10.1.0
 gunicorn==21.2.0
 python-multipart==0.0.6
+
+# Core
+numpy==1.23.5
+pillow==10.1.0
+
+# OpenCV (SAFE)
+opencv-python-headless==4.8.1.78
+
+# OCR
+easyocr==1.6.2
+
+# Face
+deepface==0.0.87
+
+# Detection (PyTorch-based)
+ultralytics==8.0.134
+
+# Torch (CPU-safe)
+torch==2.0.1
+torchvision==0.15.2
