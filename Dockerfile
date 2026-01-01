@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y \
 # -------------------- Env safety --------------------
 ENV PYTHONUNBUFFERED=1
 ENV PIP_NO_CACHE_DIR=1
-ENV OPENCV_DISABLE_DNN_TYPING=1
 ENV OPENCV_LOG_LEVEL=ERROR
 
 WORKDIR /app
@@ -34,7 +33,6 @@ ENV DEEPFACE_HOME=/app/.deepface
 EXPOSE 7860
 
 # -------------------- Run --------------------
-# IMPORTANT: workers=1 (YOLO + DeepFace will OOM otherwise)
 CMD ["gunicorn", "app:app", \
      "--bind", "0.0.0.0:7860", \
      "--workers", "1", \
